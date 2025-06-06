@@ -1,11 +1,10 @@
 $grid-gutter-width: 32px;
 @import 'bootstrap/scss/bootstrap.scss';
 
-@import 'layout/mobile_header';
-
 @import 'typography/colors';
-
 @import 'typography/typography';
+
+@import 'layout/mobile_header';
 
 @import 'homepage/homepage';
 @import 'homepage/banner';

@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="banner_content">
+        <div class="banner_content" id="Banner">
           <h1 class="banner_title .header_1">Browse everything.</h1>
           <div class="image_section">
             <div class="green_background">

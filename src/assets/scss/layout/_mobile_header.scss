@@ -16,6 +16,10 @@
     cursor: pointer;
     font-size: 24px;
     padding: 4px 0 4px 4px;
+
+    &:hover {
+      color: $gray;
+    }
   }
 
   .logo {
@@ -25,5 +29,83 @@
     font-family: 'DM Sans:Medium', sans-serif;
     font-variation-settings: 'opsz' 14;
     letter-spacing: -2px;
+    cursor: pointer;
   }
+}
+
+.navbar-container.box_shadow {
+  box-shadow: none;
+  padding-bottom: 50px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.nav_menu {
+  position: fixed;
+  top: 106px;
+  left: 0;
+  width: 100%;
+  background: white;
+  z-index: 10;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
+  padding: 8px 20px 32px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+      padding: 30px 0;
+      box-shadow: 0 -1px 0 0 $white-20;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $gray;
+      }
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+    width: fit-content;
+
+    .discover_more_content {
+      .discover_more {
+        background-color: $green-100;
+        color: $white;
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+
+        &:hover {
+          background-color: $green-40;
+
+          .learn_more_icon {
+            height: 18px;
+          }
+        }
+
+        .material-icons-round {
+          font-size: 10px;
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.befefits_into_title,
+.specifications_into_title {
+  scroll-margin-top: 80px;
+  scroll-behavior: smooth;
 }

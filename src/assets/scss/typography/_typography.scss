@@ -18,6 +18,14 @@ dd {
   padding: 0;
 }
 
+a {
+  text-decoration: none !important;
+
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
 body {
   font-family: 'Crimson Text', serif;
   font-size: 16px;
@@ -99,4 +107,13 @@ h2 {
   font-weight: 700;
   line-height: 19.6px;
   letter-spacing: -0.35px;
+}
+
+.cta_2 {
+  cursor: pointer;
+  font-family: 'DM Sans:Bold', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: -0.35px;
+  line-height: 19.6px;
 }

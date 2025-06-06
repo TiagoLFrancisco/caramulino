@@ -5,7 +5,7 @@
         <div class="cracked_the_code">
           <div class="benefits_content">
             <div class="intro_to_benefits">
-              <h2 class="befefits_into_title">Benefits</h2>
+              <h2 class="befefits_into_title" id="Benefits">Benefits</h2>
               <div class="subtitle-1">We've cracked the code.</div>
               <div class="body-1">Area provides real insights, without the data overload.</div>
             </div>
@@ -55,11 +55,9 @@
           </div>
 
           <div class="discover_more_content">
-            <div class="discover_more cta-1">
-              <a href="https://www.figma.com/sites/" target="_blank" rel="noopener noreferrer">
-                Discover More
-              </a>
-            </div>
+            <a href="https://www.figma.com/sites/" target="_blank" rel="noopener noreferrer">
+              <div class="discover_more cta-1">Discover More</div></a
+            >
           </div>
         </div>
       </div>
