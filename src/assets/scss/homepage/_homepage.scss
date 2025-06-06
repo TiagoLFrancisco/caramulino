@@ -1,0 +1,24 @@
+.discover_more_content {
+  .discover_more {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 22px;
+    background-color: $green-20;
+    border-radius: 24px;
+    width: fit-content;
+    transition: all 0.8s ease;
+
+    a:hover {
+      text-decoration: none;
+    }
+
+    &:hover {
+      background-color: $green-40;
+      a {
+        color: $white;
+      }
+    }
+  }
+}
