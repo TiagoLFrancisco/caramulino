@@ -52,6 +52,11 @@ h1 {
   line-height: 64px !important;
   font-weight: 400 !important;
   letter-spacing: -3.42px !important;
+  @media screen and (min-width: 1280px) {
+    font-size: 160px !important;
+    line-height: 136px !important;
+    letter-spacing: -8px !important;
+  }
 }
 
 h2 {
@@ -116,4 +121,17 @@ h2 {
   font-weight: 700;
   letter-spacing: -0.35px;
   line-height: 19.6px;
+}
+
+.logo {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 500;
+  font-family: 'DM Sans:Medium', sans-serif;
+  letter-spacing: -2px;
+  cursor: pointer;
+
+  @media screen and (min-width: 1280px) {
+    cursor: default;
+  }
 }

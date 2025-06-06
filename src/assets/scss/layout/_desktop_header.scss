@@ -1,0 +1,66 @@
+.desktop_navbar_container {
+  display: none;
+  @media screen and (min-width: 1280px) {
+    background-color: $white;
+    position: absolute;
+    top: 0;
+    z-index: 11;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px 0 40px;
+
+    .discover_more_content {
+      .discover_more {
+        background-color: $green-100;
+        color: $white;
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+
+        &:hover {
+          background-color: $green-40;
+
+          .learn_more_icon {
+            height: 18px;
+          }
+        }
+
+        .material-icons-round {
+          font-size: 10px;
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.desktop_fixed_navbar_container {
+  display: none;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 11;
+    flex-direction: row;
+    width: fit-content;
+    gap: 27px;
+    margin-top: 20px;
+    backdrop-filter: blur(15px);
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 0 24px;
+    border-radius: 100px;
+
+    .navbar_desktop_item {
+      padding: 20px 0;
+      &:hover {
+        color: $gray;
+      }
+    }
+  }
+}

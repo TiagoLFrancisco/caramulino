@@ -7,11 +7,9 @@
   </div>
   <div class="nav_menu" v-if="!menuClosed">
     <ul>
-      <ul>
-        <a v-for="item in navItems" :key="item" :href="'#' + item" @click="menuClosed = true">
-          <li class="cta_2">{{ item }}</li>
-        </a>
-      </ul>
+      <a v-for="item in navItems" :key="item" :href="'#' + item" @click="menuClosed = true">
+        <li class="cta_2">{{ item }}</li>
+      </a>
     </ul>
 
     <a href="https://www.figma.com/sites/" target="_blank" rel="noopener noreferrer">

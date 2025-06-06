@@ -1,9 +1,9 @@
 <template>
-  <MobileNavbar></MobileNavbar>
+  <Navbar></Navbar>
   <RouterView />
 </template>
 
 <script setup>
 import { RouterView } from 'vue-router'
-import MobileNavbar from '@/components/layout/MobileNavbar.vue'
+import Navbar from '@/components/layout/Navbar.vue'
 </script>

@@ -12,6 +12,10 @@
   border-bottom-right-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
 
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
+
   .material-icons-round {
     cursor: pointer;
     font-size: 24px;
@@ -20,16 +24,6 @@
     &:hover {
       color: $gray;
     }
-  }
-
-  .logo {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 500;
-    font-family: 'DM Sans:Medium', sans-serif;
-    font-variation-settings: 'opsz' 14;
-    letter-spacing: -2px;
-    cursor: pointer;
   }
 }
 
@@ -54,6 +48,10 @@
   gap: 50px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+
+  @media screen and (min-width: 1280px) {
+    display: none;
+  }
 
   ul {
     list-style: none;

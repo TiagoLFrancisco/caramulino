@@ -6,22 +6,33 @@
           <div class="benefits_content">
             <div class="intro_to_benefits">
               <h2 class="befefits_into_title" id="Benefits">Benefits</h2>
+
               <div class="subtitle-1">We've cracked the code.</div>
+
               <div class="body-1">Area provides real insights, without the data overload.</div>
             </div>
+
             <div class="benefits_card_section">
-              <div v-for="(benefit, index) in benefits" :key="index" class="benefit_card">
-                <div class="benefit_icon">
-                  <span class="material-icons-round">
-                    {{ benefit.iconName }}
-                  </span>
-                </div>
-                <div class="benefit_info">
-                  <div class="benefit_title subtitle-2">
-                    {{ benefit.genefitName }}
+              <div class="row">
+                <div
+                  v-for="(benefit, index) in benefits"
+                  :key="index"
+                  class="benefit_card col-12 col-lg-3"
+                >
+                  <div class="benefit_icon">
+                    <span class="material-icons-round">
+                      {{ benefit.iconName }}
+                    </span>
                   </div>
-                  <div class="benefit_description body-1">
-                    {{ benefit.benefitDescription }}
+
+                  <div class="benefit_info">
+                    <div class="benefit_title subtitle-2">
+                      {{ benefit.genefitName }}
+                    </div>
+
+                    <div class="benefit_description body-1">
+                      {{ benefit.benefitDescription }}
+                    </div>
                   </div>
                 </div>
               </div>
@@ -31,7 +42,7 @@
           <div class="mountains"></div>
         </div>
       </div>
-      <div class="col-12">
+      <div class="col-12 col-lg-6">
         <div class="the_big_picture">
           <div class="benefits_content">
             <div class="intro_to_benefits">
@@ -61,7 +72,7 @@
           </div>
         </div>
       </div>
-      <div class="col-12">
+      <div class="col-12 col-lg-6">
         <div class="slide_show" :style="{ backgroundImage: `url(${slideImages[currentIndex]})` }">
           <div class="arrows_container">
             <img src="/homepage/arrow.svg" alt="prev" @click="prevSlide" />

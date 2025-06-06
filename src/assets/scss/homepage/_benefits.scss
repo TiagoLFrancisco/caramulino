@@ -2,17 +2,29 @@
   padding-bottom: 100px;
   box-shadow: 0 1px 0 0 $white-20;
 
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 120px;
+  }
+
   .benefits_content {
     padding: 80px 0 60px 0;
     display: flex;
     flex-direction: column;
     gap: 30px;
 
+    @media screen and (min-width: 768px) {
+      gap: 50px;
+    }
+
     .intro_to_benefits {
       display: flex;
       flex-direction: column;
       gap: 30px;
       padding-right: 20px;
+
+      @media screen and (min-width: 1280px) {
+        gap: 50px;
+      }
     }
 
     .benefits_card_section {
@@ -27,6 +39,10 @@
         flex-direction: column;
         gap: 24px;
         box-shadow: 0 -1px 0 0 $white-20;
+
+        @media screen and (min-width: 1280px) {
+          gap: 20px;
+        }
 
         &:nth-of-type(3),
         &:nth-of-type(4) {
@@ -43,6 +59,13 @@
           display: flex;
         }
       }
+
+      .row {
+        padding: 0 16px;
+        @media screen and (min-width: 1280px) {
+          --bs-gutter-x: 0px;
+        }
+      }
     }
   }
 
@@ -54,6 +77,11 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+
+    @media screen and (min-width: 1280px) {
+      background-image: url('/homepage/mountains_1280.png');
+      height: 620px;
+    }
   }
 }
 

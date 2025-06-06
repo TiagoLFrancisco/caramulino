@@ -12,11 +12,26 @@
     align-items: center;
     gap: 20px;
 
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @media screen and (min-width: 1280px) {
+      gap: 40px;
+    }
+
     .partner_logo {
       width: 150px;
       height: 82px;
       padding: 20px;
       display: flex;
+
+      @media screen and (min-width: 1280px) {
+        width: 154px;
+        height: 84px;
+      }
 
       img {
         width: 100%;

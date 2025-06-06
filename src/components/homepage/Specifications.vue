@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-12">
+      <div class="col-12 col-lg-8 offset-lg-2 align-items-center">
         <div class="why_choose_area">
           <div class="specifications_content">
             <div class="intro_to_specifications">
