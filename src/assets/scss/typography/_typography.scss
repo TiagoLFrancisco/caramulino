@@ -66,6 +66,10 @@ h2 {
   letter-spacing: -0.315px !important;
   color: $green-100;
   font-family: 'Roboto Mono', monospace;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 12px !important;
+  }
 }
 
 .subtitle-1 {
@@ -75,6 +79,12 @@ h2 {
   letter-spacing: -1.5px;
   color: $black;
   font-family: 'Crimson Text', serif;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 60px;
+    letter-spacing: -1.8px;
+    line-height: 54px;
+  }
 }
 
 .subtitle-2 {
