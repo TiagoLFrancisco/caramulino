@@ -1,7 +1,12 @@
-@import 'bootstrap/dist/css/bootstrap.min.css';
+$grid-gutter-width: 32px;
+@import 'bootstrap/scss/bootstrap.scss';
 
-@import 'layout/header';
+@import 'layout/mobile_header';
 
 @import 'typography/colors';
 
 @import 'typography/typography';
+
+@import 'homepage/banner';
+@import 'homepage/partners';
+@import 'homepage/benefits';
