@@ -1,4 +1,9 @@
 .navbar-container {
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  z-index: 11;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,7 +13,9 @@
   box-shadow: rgba(0, 0, 0, 0.05) 0px 2px 4px 0px;
 
   .material-icons-round {
+    cursor: pointer;
     font-size: 24px;
+    padding: 4px 0 4px 4px;
   }
 
   .logo {

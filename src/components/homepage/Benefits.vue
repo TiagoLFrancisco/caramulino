@@ -54,17 +54,50 @@
             </div>
           </div>
 
-          <div class="mountains"></div>
+          <div class="discover_more_content">
+            <div class="discover_more cta-1">
+              <a href="https://www.figma.com/sites/" target="_blank" rel="noopener noreferrer">
+                Discover More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="slide_show" :style="{ backgroundImage: `url(${slideImages[currentIndex]})` }">
+          <div class="arrows_container">
+            <img src="/homepage/arrow.svg" alt="prev" @click="prevSlide" />
+            <img
+              src="/homepage/arrow.svg"
+              alt="next"
+              style="transform: rotate(180deg)"
+              @click="nextSlide"
+            />
+          </div>
         </div>
       </div>
     </div>
   </div>
+  <div class="separator"></div>
 </template>
 
 <script setup>
+import { ref } from 'vue'
 import { useBenefitsStore } from '@/stores/useBenefits'
 
 const store = useBenefitsStore()
 const benefits = store.benefits
 const bigPictures = store.bigPictures
+
+const currentIndex = ref(0)
+
+const slideImages = ['/homepage/candle.png', '/homepage/leaf.png', '/homepage/keyboard.png']
+
+const nextSlide = () => {
+  currentIndex.value = (currentIndex.value + 1) % slideImages.length
+}
+
+const prevSlide = () => {
+  currentIndex.value = (currentIndex.value - 1 + slideImages.length) % slideImages.length
+}
 </script>

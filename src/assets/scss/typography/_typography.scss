@@ -1,4 +1,5 @@
 body,
+a,
 h1,
 h2,
 h3,
@@ -88,4 +89,14 @@ h2 {
   font-size: 15px;
   line-height: 21px;
   letter-spacing: -0.075px;
+}
+
+.cta-1 {
+  color: $black;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.6px;
+  letter-spacing: -0.35px;
 }

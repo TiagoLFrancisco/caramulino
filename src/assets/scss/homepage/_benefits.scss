@@ -96,4 +96,60 @@
       }
     }
   }
+
+  .discover_more_content {
+    .discover_more {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 14px 22px;
+      background-color: $green-20;
+      border-radius: 24px;
+      width: fit-content;
+      transition: all 0.8s ease;
+
+      a:hover {
+        text-decoration: none;
+      }
+
+      &:hover {
+        background-color: $green-40;
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.slide_show {
+  height: 744px;
+  padding: 30px;
+  width: 100%;
+  border-radius: 30px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .arrows_container {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    cursor: pointer;
+
+    img {
+      height: 40px;
+      width: 40px;
+    }
+    img:nth-of-type(2) {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.separator {
+  padding-top: 100px;
+  width: 100%;
+  box-shadow: 0 1px 0 0 $gray-40;
 }
