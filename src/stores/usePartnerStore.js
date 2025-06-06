@@ -4,12 +4,12 @@ import { ref } from 'vue'
 
 export const usePartnerStore = defineStore('partner', () => {
   const partnerLogos = ref([
-    '/homepage/2.png',
-    '/homepage/1.png',
-    '/homepage/5.png',
-    '/homepage/6.png',
-    '/homepage/4.png',
-    '/homepage/3.png',
+    '/caramulino/homepage/2.png',
+    '/caramulino/homepage/1.png',
+    '/caramulino/homepage/5.png',
+    '/caramulino/homepage/6.png',
+    '/caramulino/homepage/4.png',
+    '/caramulino/homepage/3.png',
   ])
   return { partnerLogos }
 })

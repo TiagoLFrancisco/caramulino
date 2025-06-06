@@ -73,13 +73,13 @@
     height: 600px;
     width: 100%;
     border-radius: 30px;
-    background-image: url('/homepage/mountains.png');
+    background-image: url('/caramulino/homepage/mountains.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 
     @media screen and (min-width: 1280px) {
-      background-image: url('/homepage/mountains_1280.png');
+      background-image: url('/caramulino/homepage/mountains_1280.png');
       height: 620px;
     }
   }

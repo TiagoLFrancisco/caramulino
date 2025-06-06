@@ -75,9 +75,9 @@
       <div class="col-12 col-lg-6">
         <div class="slide_show" :style="{ backgroundImage: `url(${slideImages[currentIndex]})` }">
           <div class="arrows_container">
-            <img src="/homepage/arrow.svg" alt="prev" @click="prevSlide" />
+            <img src="/caramulino/homepage/arrow.svg" alt="prev" @click="prevSlide" />
             <img
-              src="/homepage/arrow.svg"
+              src="/caramulino/homepage/arrow.svg"
               alt="next"
               style="transform: rotate(180deg)"
               @click="nextSlide"
@@ -100,7 +100,11 @@ const bigPictures = store.bigPictures
 
 const currentIndex = ref(0)
 
-const slideImages = ['/homepage/candle.png', '/homepage/leaf.png', '/homepage/keyboard.png']
+const slideImages = [
+  '/caramulino/homepage/candle.png',
+  '/caramulino/homepage/leaf.png',
+  '/caramulino/homepage/keyboard.png',
+]
 
 const nextSlide = () => {
   currentIndex.value = (currentIndex.value + 1) % slideImages.length

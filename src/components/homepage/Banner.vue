@@ -8,8 +8,11 @@
             <div class="green_background">
               <div class="image_wraper">
                 <picture>
-                  <source media="(min-width: 1280px)" srcset="\homepage\phone_1280.png" />
-                  <img src="\homepage\phone.png" alt="banner" />
+                  <source
+                    media="(min-width: 1280px)"
+                    srcset="/caramulino/homepage/phone_1280.png"
+                  />
+                  <img src="/caramulino/homepage/phone.png" alt="banner" />
                 </picture>
               </div>
             </div>
