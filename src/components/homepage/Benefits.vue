@@ -75,9 +75,9 @@
       <div class="col-12 col-lg-6">
         <div class="slide_show" :style="{ backgroundImage: `url(${slideImages[currentIndex]})` }">
           <div class="arrows_container">
-            <img src="/caramulino/homepage/arrow.svg" alt="prev" @click="prevSlide" />
+            <img src="/homepage/arrow.svg" alt="prev" @click="prevSlide" />
             <img
-              src="/caramulino/homepage/arrow.svg"
+              src="/homepage/arrow.svg"
               alt="next"
               style="transform: rotate(180deg)"
               @click="nextSlide"
